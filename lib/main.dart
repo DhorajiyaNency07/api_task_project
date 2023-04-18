@@ -1,6 +1,6 @@
+import 'package:api_task_project/screens/api_one/api_one_screen.dart';
 import 'package:flutter/material.dart';
 
-import 'screens/api_two/api_request_all.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: const ApiGetDataScreen(),
-      home: HomePage(),
+      // home: HomePage(),
+      home: const Home(),
     );
   }
 }
