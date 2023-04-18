@@ -6,6 +6,7 @@ class HomePage extends StatelessWidget {
   final stateManager = HomePageManager();
 
   HomePage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -46,9 +47,20 @@ class HomePage extends StatelessWidget {
             if (requestState is RequestLoadInProgress) {
               return const CircularProgressIndicator();
             } else if (requestState is RequestLoadSuccess) {
-              return Expanded(child: SingleChildScrollView(child: Text(requestState.body,style: const TextStyle(fontSize: 14,color: Colors.white),)));
+              return Expanded(
+                child: SingleChildScrollView(
+                  child: Text(
+                    requestState.body,
+                    style: const TextStyle(fontSize: 14, color: Colors.deepPurple),
+                  ),
+                ),
+              );
             } else {
-              return Container();
+              return Container(
+                color: Colors.red,
+                height: 100,
+                width: 100,
+              );
             }
           },
         ),
