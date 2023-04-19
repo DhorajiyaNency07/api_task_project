@@ -1,4 +1,5 @@
 import 'package:api_task_project/screens/api_one/api_one_screen.dart';
+import 'package:api_task_project/screens/api_two/api_request_all.dart';
 import 'package:flutter/material.dart';
 
 
@@ -17,8 +18,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       // home: const ApiGetDataScreen(),
-      // home: HomePage(),
-      home: const Home(),
+      home: HomePage(),
+      // home: const Home(),
     );
   }
 }
